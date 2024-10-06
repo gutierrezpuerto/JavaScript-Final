@@ -1,0 +1,28 @@
+.encabezado {
+    display: flex;
+    box-sizing: content-box;
+    padding: 0px;
+    background: none;
+}
+.uno{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    background-color: aqua;
+}
+.icono{
+    width: 80px;
+    padding-left: 15px;
+
+}
+.principal{
+    list-style: none;
+    display: flex; 
+    padding: 10px;
+    justify-content: flex-end;
+   
+}
+.histo{
+    padding-right: 15px;
+    
+}

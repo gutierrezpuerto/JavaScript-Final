@@ -1,28 +1,189 @@
-.encabezado {
-    display: flex;
-    box-sizing: content-box;
-    padding: 0px;
-    background: none;
+*{
+    font-family:  "Raleway", sans-serif;
+    font-weight: normal;
+    font-size:medium;
+    box-sizing: border-box;
 }
-.uno{
-    display: flex;
-    align-content: center;
-    width: 100%;
-    background-color: aqua;
-}
-.icono{
-    width: 80px;
-    padding-left: 15px;
+:root{
+ --colorbBlanco:#FFFFFF;
+ --colorazul:#2F3645;
+ --colorazultras:#2f3645b3; 
+ --colorazultras2:#767a81de;
+ --colorgrisombra: #808080;
+ --colornegrasom:#000000;
+    
 
 }
-.principal{
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+
+}
+   
+.encabezado{
+    background: url(./imagen/fondo.jpg) 50% 0 fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    background-color:transparent;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color .3s ease;
+}
+
+
+.menu {
+    display: flex;
     list-style: none;
-    display: flex; 
-    padding: 10px;
-    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu, a{
+    text-decoration: none;
+    font-size: calc(25px + 1vw);
+    color:var(--colorbBlanco);
+    margin: 10px;
+    text-shadow: 1px 1px var(--colorgrisombra), 2px 2px var(--colornegrasom);
+    transition: color .3s ease, text-shadow .3s ease;
+}
+.menu, a:hover{
+    color: var(--colorbBlanco)
+    text-shadow 1px 1px gray, 2px 2px white;
+}
+.progr{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-weight: 400;
+    font-size: calc(3em + 1vw);
+    color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px #808080, 6px 6px black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.scrolled #navbar{
+    background-color: transparent;
+}
+.scrolled .menu, a{
+    color:#FFFFFF;
+    text-shadow: 1px 1px #808080, 3px 3px black;;
+}
+.scrolled .menu a:hover{
+    color:transparent;
+    text-shadow: none;
+}
+/*-------------Contenido-------------*/
+h2{
+    text-align: center;
+    /*font-family: sans-serif;*/
+    margin: 80px 100px 100px 100px;
+    font-size:calc(2em + 18px) ;
+    font-weight: 500;
+    text-shadow: 1px 1px white, 2px 2px gray;
+    color: #2f3645;
+}
+.central{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+p {
+    width: 90%;
+    min-height: 30px;
+    text-align: center;
+    color: #181D31;
+}
+.uno, .dos{
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    width: 30%;
+}
+.boton{
+    display: flex;
+    flex-direction: column;
+    background-color: #2f3645;
+    color: #ffffff;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s;
    
 }
-.histo{
-    padding-right: 15px;
+.boton:hover{
+    background-color: #0d5218;
+}
+@media (max-width: 768px) {
+    .uno, .dos {
+        width: 80%;
+    }
+    .boton{
+        width: 75%;
+    }
+}
+
+/*---------- footer ------------*/
+footer{
+    display: flex;
+    padding: 90px;
+    background-color: #2f3645;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin-top: 100px;
     
+}
+.fin{
+    display: flex;
+   justify-content: space-around;
+   width: 300px;
+   height: 60px;
+}
+.textofoot{
+    font-size: 14px;
+    font-style: normal;
+    color: #ffffff ;
+    text-align: center;
+
+}
+div {
+   /* display: block;
+    justify-content: end;*/
+    align-items: center;
+}
+
+.logofoot {
+    width: 100px;
+    height: auto;
+    margin: 10px;
 }

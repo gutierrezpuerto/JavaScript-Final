@@ -1,47 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilo.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
     <link rel="shortcut icon" href="./imagen/logo.png">
     <title>Programacion e historia</title>
 </head>
 
-<body>
-    <header class="encabezado">
-        <div class="uno"> 
-            <img class="icono" src="./imagen/play.svg" alt="computadora">
-             <nav >
-                <ul class="principal">
-                  <li class="histo"><a  href="" target="_blank"></a>HISTORIA  </li>
-                  <li><a href="" target="_blank"></a>JUGUEMOS</li>
+<body class="cuerpo" onscroll="navChange()">
+    <nav id="navbar">
+        <a href="/" class="logo">
+            <svg  width="200" height="90" >
+            <rect x="45" y="5" width="80" height="50"  class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+            <rect x="50" y="10" width="70" height="40"  class="mon2" fill="#000000" stroke="#2F3645" stroke-width="2"></rect>
+            <rect x="75" y="55" width="20" height="10"  class="mon1" fill="#767a81de" strok="#2F3645" stroke-width="2"></rect>
+            <polygon points="50 70,120 70 ,130 80,40 80" fill="#767a81de" strok="#2F3645" stroke-width="2" class="mon1" stroke="#2F3645" stroke-width="2"></polygon>
+            <polygon points="55 72,115 72  ,122 78,48 78" fill="#000000" class="mon2" stroke="#2F3645" ></polygon>
+            <line x1="55" y1="19" x2="100" y2="19" stroke="green" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="24" x2="100" y2="24" stroke="green" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="29" x2="70" y2="29" stroke="green" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="33" x2="115" y2="33" stroke="green" stroke-width="3" class="cod"></line>
+            <line x1="55" y1="38" x2="115" y2="38" stroke="green" stroke-width="3" class="cod"></line>
+        </svg></a>
+    
+        <div class="unico"> 
+                <ul class="menu">
+                  <li class="histo"><a  href="./index2.html" target="_blank">HISTORIA</a></li>
+                  <li class="item-menu"><a href="./index2.html" target="_blank">JUGUEMOS</a></li>
                </ul>
-             </nav>
         </div>
-    </header>
+    </nav>
+
+<header class="encabezado">
     <div class="progr">
          <h1>PROGRAMACION E HISTORIA</h1>
-         <img src="./imagen/fondo.jpg" alt="panatalla de computadora con codigo">
     </div>
-    <div class="central">
-     <h2>CONTENIDO</h2>
-         <section class="uno">
-             <img src="./imagen/historia-programacion.jpg" alt="mesa con disquet y computadora commodore64 retro">
-              <p>Conozcamos un poco sobre la historia de la programacion</p>
-               <button>IR A HISTORIA</button>
-    
+</header>
 
-             <img src="./imagen/img2.jpg" alt="hombre frente a la pc programando">
-             <p>Vamos a jugar un poco utilizndo metodos aprendidos en clase</p>
-             <button>IR A JUEGO</button>
+    <h2>CONTENIDO</h2>
+
+    <div class="central">
+         <section class="uno">
+             <img class="primera" src="./imagen/historia-programacion.jpg" alt="mesa con disquet y computadora commodore64 retro">
+             <p>Conozcamos un poco sobre la historia de la programacion</p>
+             <a class="boton" href="./index2.html" target="_blank">IR A HISTORIA</a>
+         </section>
+
+         <section class="dos">
+             <img class="segunda" src="./imagen/img2.jpg" alt="hombre frente a la pc programando">
+             <p>Vamos a jugar un poco utilizando metodos aprendidos en clase</p>
+             <a class="boton" href="./index2.html" target="_blank">IR A JUEGO</a>
          </section>
     </div>
+
+
     <footer>
-         <img src="./imagen/logo.png" alt="flechas para ambas direcciones">
-         <p>PROGRAMACION E HISTORIA</p>
-         <p class="cierre">Sitio con fines educativos - Creados por M.Victoria Lopez - Reproducido por Gutierrez Enrique</p>
+        <div class="fin">
+             <img class="logofoot" src="./imagen/logo.png" alt="logo">
+             <h3 class="textofoot">PROGRAMACION<br> E<br> HISTORIA</h3>
+        </div>
+        <div>Sitio con fines educativos - Creados por M.Victoria Lopez</div>
     </footer>
+
     <script src="./script1.js"></script> 
 </body>
-</html>
+</html 

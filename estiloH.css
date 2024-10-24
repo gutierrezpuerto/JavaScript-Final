@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+
+}
+
+:root{
+    --colorbBlanco:#FFFFFF;
+    --colorazul:#2F3645;
+    --colorazultras:#2f3645b3; 
+    --colorazultras2:#767a81de;
+    --colorgrisombra: #808080;
+    --colornegrasom:#000000;
+
+}
+.tit{
+    display: flex;
+    font-size: calc(3em + 18px);
+    color: #eeeeee;
+    text-shadow: 2px 2px #808080, 6px 6px black;
+    margin:0;
+    padding: auto;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+body{
+    background-color:var(--colorbBlanco)
+}
+h2{
+    display: flex;
+    color: var(--colorazul);
+    text-shadow: 1px 1px white, 2px 2px gray;
+    font-size: calc(2em + 18px);
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+
+}
+#tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+
+}
+.firt, .second, .third{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 80px 50px;
+    gap: 20px;
+
+}
+.one, .two, .three {
+    width: 50%;
+}
+.oneIn, twoIn, .threeIn {
+    display: block;
+}
+

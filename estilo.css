@@ -11,9 +11,8 @@
  --colorazultras2:#767a81de;
  --colorgrisombra: #808080;
  --colornegrasom:#000000;
-    
-
 }
+
 body{
     display: flex;
     flex-direction: column;
@@ -26,6 +25,8 @@ body{
 .encabezado{
     background: url(./imagen/fondo.jpg) 50% 0 fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -53,19 +54,19 @@ body{
     padding: 0;
     margin: 0;
 }
-.menu li{
+.menu, li{
     margin-left: 20px;
 }
 .menu, a{
     text-decoration: none;
-    font-size: calc(25px + 1vw);
+    font-size: calc(10px + 1vw);
     color:var(--colorbBlanco);
     margin: 10px;
     text-shadow: 1px 1px var(--colorgrisombra), 2px 2px var(--colornegrasom);
     transition: color .3s ease, text-shadow .3s ease;
 }
 .menu, a:hover{
-    color: var(--colorbBlanco)
+    color: var(--colornegrasom)
     text-shadow 1px 1px gray, 2px 2px white;
 }
 .progr{
@@ -99,10 +100,8 @@ h1{
 /*-------------Contenido-------------*/
 h2{
     text-align: center;
-    /*font-family: sans-serif;*/
     margin: 80px 100px 100px 100px;
     font-size:calc(2em + 18px) ;
-    font-weight: 500;
     text-shadow: 1px 1px white, 2px 2px gray;
     color: #2f3645;
 }
@@ -134,13 +133,12 @@ p {
     background-color: #2f3645;
     color: #ffffff;
     text-align: center;
+    text-decoration: none;
     width: 80%;
     cursor: pointer;
-    transition: background-color 0.3s;
-   
 }
 .boton:hover{
-    background-color: #0d5218;
+    background-color: var(--colorgrisombra);
 }
 @media (max-width: 768px) {
     .uno, .dos {
@@ -177,8 +175,6 @@ footer{
 
 }
 div {
-   /* display: block;
-    justify-content: end;*/
     align-items: center;
 }
 

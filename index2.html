@@ -10,18 +10,33 @@
     <link rel="shortcut icon" href="./imagen/logo.png">
     <title>"Historia de la programacion"</title>
 </head>
-<body>
-    <header>
-        <div class="menu1">
-            <ul>
-                <li><img src="./imagen/logo.png" alt="compusvg"></li>
-                <li><a href="./index2.html">HISTORIA</a></li>
-                <li><a href="./index.html">JUGUEMOS</a></li>
-            </ul>
-            <h1 class="tit">HISTORIA DE LA PROGRAMACION</h1>
-         </div>
+<body class="cuerpo" onscroll="navChange()">
+    <header class="encab">
+        <nav id="navbar">
+            <a href="/" class="logo">
+                <svg  width="200" height="90" >
+                <rect x="45" y="5" width="80" height="50"  class="mon1" fill="#ffffff" stroke="#2f3645" stroke-width="2"></rect>
+                <rect x="50" y="10" width="70" height="40"  class="mon2" fill="#000000" stroke="#2F3645" stroke-width="2"></rect>
+                <polygon points="50 70,120 70 ,130 80,40 80" fill="#ffffff" strok="#2F3645" stroke-width="2" class="mon1" stroke="#2F3645" stroke-width="2"></polygon>
+                <polygon points="55 72,115 72  ,122 78,48 78" fill="#000000" class="mon2" stroke="#2F3645" ></polygon>
+                <line x1="55" y1="19" x2="100" y2="19" stroke="trasparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="24" x2="100" y2="24" stroke="trasparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="29" x2="70" y2="29" stroke="trasparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="33" x2="115" y2="33" stroke="trasparent" stroke-width="3" class="cod"></line>
+                <line x1="55" y1="38" x2="115" y2="38" stroke="trasparent" stroke-width="3" class="cod"></line>
+                 </svg></a>
+        
+            <div class="unico"> 
+                    <ul class="menu">
+                      <li class="histo"><a  href="./index2.html">HISTORIA</a></li>
+                      <li class="item-menu"><a href="./indexJue.html">JUGUEMOS</a></li>
+                   </ul>
+            </div>
+        </nav>
+            <div id="dibujo">
+                <h1 class="tit">HISTORIA DE LA PROGRAMACION </h1>
+            </div>
      </header>
-
     <main id="tarjetas">
         <section class="firt">
             <img class="one" src="./imagen/1-800x534.jpg" alt="personas alrededor de una computadora antigua">
@@ -55,20 +70,35 @@
                   Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar a los lenguajes de hoy en dia</p>
              </div>
         </section>
-         <section class="videito">
-            <p>hablemos un poquito más...</p>
-             <video  poster="./imagen/img-video.jpg">
-               <source src="./video/historia-Comp.mp4" type="video/mp4"/>
-             </video>
-             <div>
-                 <button id="play" onclick="reproducir()">PLAY</button>
-                 <button id="pausar" onclick="pausar()">PAUSA</button>
-                 <button id="audio"onclick="mutedOnOff()">SIN SONIDO</button>
-                 <p class="reloj"></p> </div>
-             </section>
     </main>
-     <footer>
-     </footer>
+        <div class="contenedorvideo">
+         <section class="videito">
+            <h2>Hablemos un poquito más...</h2>
+            <div class="elvideo">
+                 <video id="viderep" poster="./imagen/img-video.jpg">
+                 <source src="./video/historia-Comp.mp4" type="video/mp4"/>
+                 </video>
+            </div>
+            <div class="contenedorextra">
+                <div class="botonera">
+                    <button id="play" onclick="reproducir()"><img src="./imagen/play.svg" alt="inicio del video"></button>
+                    <button id="pausar" onclick="pausar()"><img src="./imagen/pausa.svg" alt="pausa el video"></button>
+                </div>
+                    <div class="tiempo">
+                    <p class="reloj">Duracion video</p>
+                    </div> 
+                
+            </div>
+         </section>
+        </div>
+    
+    <footer>
+        <div class="fin">
+             <img class="logofoot" src="./imagen/logo.png" alt="logo">
+             <h3 class="textofoot">PROGRAMACION<br> E<br> HISTORIA</h3>
+        </div>
+        <div class="fin">Sitio con fines educativos - Creados por M.Victoria Lopez</div>
+    </footer>
      <script src="./script1.js"></script>
  </body>
  </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estiloJ.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="shortcut icon" href="./imagen/logo.png">
+    <title>Juego</title>
+</head>
+<body class="cuerpo" onscroll="navChange()">
+    <div class="trasfondo">
+         <nav id="navbar">
+             <a href="/" class="logo">
+              <svg  width="200" height="90" >
+             <rect x="45" y="5" width="80" height="50"  class="mon1" fill="#ffffff" stroke="#2F3645" stroke-width="2"></rect>
+             <rect x="50" y="10" width="70" height="40"  class="mon2" fill="rgb(73, 85, 121)" stroke="#ffffff" stroke-width="2"></rect>           
+              <polygon points="50 70,120 70 ,130 80,40 80" fill="#ffffff" strok="#2F3645" stroke-width="2" class="mon1" stroke="#2F3645" stroke-width="2"></polygon>
+              <polygon points="55 72,115 72  ,122 78,48 78" fill="rgb(73, 85, 121)" class="mon2" stroke="#2F3645" ></polygon>
+             </svg></a>
+         <div class="unico"> 
+                <ul class="menu">
+                  <li class="histo"><a  href="./index2.html">HISTORIA</a></li>
+                  <li class="item-menu"><a href="./indexJue.html">JUGUEMOS</a></li>
+               </ul>
+         </div>
+         </nav>
+     <header>
+        <section class="tex" >
+            <h1 >JUGUEMOS UN POCO</h1>
+         </section>
+     </header>
+    </div>
+    <main >
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="wey">
+            <div class="conteRC">
+                <div class="A" ondragover="permitirSoltar(event)" ondrop="soltar(event)"><p> Arrastre y suelte la imágen aquí </p></div>
+                <div class="B" ondragover="permitirSoltar(event)" ondrop="soltar(event)"><p> Arrastre y suelte la imágen aquí </p></div>
+                <div class="C" ondragover="permitirSoltar(event)" ondrop="soltar(event)"><p> Arrastre y suelte la imágen aquí </p></div>
+            </div>
+            <div class="fragmento">
+                <img id="fb2" class="BB" draggable="true" ondragstart="arrastrar(event)" src="./imagen/rompe2.png" alt="diferentes hombre e mitad de frase" ></img>
+                <img id="fa2" class="AA" draggable="true" ondragstart="arrastrar(event)" src="./imagen/Rompe1.png" alt="dama antigua, pricipio de frase"></img>
+                <img id="fc2" class="CC" draggable="true" ondragstart="arrastrar(event)" src="./imagen/Rompe3.png" alt="computadora antigua y final de frase"></img>
+            </div>
+
+            <button id="reset" onclick="reinicio()">REINICIAR</button>
+
+        </section>
+
+    </main>
+  <script src="./script1.js"></script>  
+</body>
+</html>
